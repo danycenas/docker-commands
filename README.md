@@ -34,6 +34,9 @@ docker start <CONTAINER-NAME OR CONTAINER-ID>
 docker stop <CONTAINER-NAME OR CONTAINER-ID>
 /* Stop container */
 
+docker logs <CONTAINER-NAME OR CONTAINER-ID>
+/* Fetch the logs of a container */
+
 docker rm <CONTAINER-NAME OR CONTAINER-ID>
 /* Delete container */
 ```
