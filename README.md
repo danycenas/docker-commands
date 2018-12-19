@@ -1,7 +1,7 @@
 ## Containers
 
 
-{% highlight javascript %}
+{% highlight Dockerfile %}
 /* Some pointless Javascript */
 var rawr = ["r", "a", "w", "r"];
 {% endhighlight %}
