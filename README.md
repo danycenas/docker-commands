@@ -19,15 +19,6 @@ docker pull debian:8
 docker container ps -a
 /* List all container (initiated or detained)  */
 
-docker start <CONTAINER-NAME OR CONTAINER-ID>
-/* Start container */
-
-docker stop <CONTAINER-NAME OR CONTAINER-ID>
-/* Stop container */
-
-docker rm <CONTAINER-NAME OR CONTAINER-ID>
-/* Delete container */
-
 docker run -it ubuntu
 /* Created container name by default */
 
@@ -36,6 +27,15 @@ docker run -it --name containerUbuntu ubuntu
 
 docker run -it --name containerUbuntu -d ubuntu
 /* Start a container in detached mode */
+
+docker start <CONTAINER-NAME OR CONTAINER-ID>
+/* Start container */
+
+docker stop <CONTAINER-NAME OR CONTAINER-ID>
+/* Stop container */
+
+docker rm <CONTAINER-NAME OR CONTAINER-ID>
+/* Delete container */
 ```
 
 ### Support or Contact
