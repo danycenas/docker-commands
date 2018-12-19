@@ -1,6 +1,6 @@
 ## Containers
 
-```markdown
+
 Creando un docker file
 
 {% highlight dockerfile %}
@@ -11,7 +11,6 @@ RUN make /app
 CMD python /app/app.py
 {% endhighlight %}
 
-```
 
 {% highlight java %}
 /* Comments */
