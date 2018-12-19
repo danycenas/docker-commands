@@ -1,5 +1,8 @@
 ## Containers
 
+```markdown
+Creando un docker file
+
 {% highlight dockerfile %}
 /* Comments */
 FROM ubuntu:15.04
@@ -7,6 +10,8 @@ COPY . /app
 RUN make /app
 CMD python /app/app.py
 {% endhighlight %}
+
+```
 
 {% highlight java %}
 /* Comments */
