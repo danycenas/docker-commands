@@ -2,6 +2,11 @@
 
 Creando un docker file
 
+
+```dockerfile
+docker run -it --name containerUbuntu ubuntu
+```
+
 ```dockerfile
 FROM ubuntu:15.04
 COPY . /app
