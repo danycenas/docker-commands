@@ -1,8 +1,5 @@
 ## Containers
 
-```markdown
-Crear contenedor
-
 {% highlight javascript %}
 /* Some pointless jjjjjavascript */
 var rawr = ["r", "a", "w", "r"];
