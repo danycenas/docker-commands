@@ -1,12 +1,15 @@
 ## Containers
 
-**Crear**
+**Created**
 ```docker
+docker run -it ubuntu
+/* Created container name by default */
+
 docker run -it --name containerUbuntu ubuntu
+/* Created container name assigned */
 
-docker run -it --name containerDebian debian
-
-docker run -it --name containerAlpine alpine
+docker run -it --name containerUbuntu -d ubuntu
+/* Start a container in detached mode */
 ```
 
 ### Support or Contact
