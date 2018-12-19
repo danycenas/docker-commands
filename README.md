@@ -3,8 +3,8 @@
 ```markdown
 Crear contenedor
 
-{% highlight Javascript %}
-/* Some pointless Javascript */
+{% highlight javascript %}
+/* Some pointless jjjjjavascript */
 var rawr = ["r", "a", "w", "r"];
 {% endhighlight %}
 
