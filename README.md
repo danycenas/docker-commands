@@ -1,7 +1,12 @@
 ## Containers
 
 {% highlight javascript %}
-/* Some pointless jjjjjavascript */
+/* Comments */
+var rawr = ["r", "a", "w", "r"];
+{% endhighlight %}
+
+{% highlight javascript %}
+/* Comments */
 var rawr = ["r", "a", "w", "r"];
 {% endhighlight %}
 
