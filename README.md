@@ -1,8 +1,8 @@
 ## Containers
 
-{% highlight javascript %}
+{% highlight java %}
 /* Comments */
-var rawr = ["r", "a", "w", "r"];
+int x = Integer.parseInt("10");
 {% endhighlight %}
 
 {% highlight javascript %}
