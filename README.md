@@ -1,7 +1,7 @@
 ## Containers
 
 **Created**
-```docker
+```dockerfile
 docker run -it ubuntu
 /* Created container name by default */
 
