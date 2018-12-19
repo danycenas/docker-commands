@@ -14,7 +14,7 @@ docker pull debian:8
 
 ## Docker Containers
 
-**How to create a container?**
+**How to create/delete a container?**
 ```java
 docker container ps -a
 /* List all container (initiated or detained)  */
@@ -28,12 +28,21 @@ docker run -it --name containerUbuntu ubuntu
 docker run -it --name containerUbuntu -d ubuntu
 /* Start a container in detached mode */
 
+docker rm <CONTAINER-NAME OR CONTAINER-ID>
+/* Delete container */
+```
+
+**How to start/stop a container?**
+```java
 docker start <CONTAINER-NAME OR CONTAINER-ID>
 /* Start container */
 
 docker stop <CONTAINER-NAME OR CONTAINER-ID>
 /* Stop container */
+```
 
+**Another options from container**
+```java
 docker port <CONTAINER-NAME OR CONTAINER-ID>
 /* List port mappings or a specific mapping for the container */
 
@@ -42,9 +51,6 @@ docker inspect <CONTAINER-NAME OR CONTAINER-ID>
 
 docker logs <CONTAINER-NAME OR CONTAINER-ID>
 /* Fetch the logs of a container */
-
-docker rm <CONTAINER-NAME OR CONTAINER-ID>
-/* Delete container */
 ```
 
 ### Support or Contact
