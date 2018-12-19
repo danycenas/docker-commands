@@ -1,8 +1,12 @@
-# Containers
+## Containers
 
 **Crear imagen Ubuntu**
 ```dockerfile
 docker run -it --name containerUbuntu ubuntu
+
+docker run -it --name containerDebian debian
+
+docker run -it --name containerAlpine alpine
 ```
 
 ```dockerfile
