@@ -1,4 +1,10 @@
-## Welcome to GitHub Pages
+## Containers
+
+
+{% highlight javascript %}
+/* Some pointless Javascript */
+var rawr = ["r", "a", "w", "r"];
+{% endhighlight %}
 
 You can use the [editor on GitHub](https://github.com/danycenas/docker-commands/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
