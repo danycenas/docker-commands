@@ -1,5 +1,12 @@
 ## Containers
 
+```markdown
+Crear contenedor
+
+{% highlight r %}
+/* Some pointless r */
+docker run -it ubuntu
+{% endhighlight %}
 
 {% highlight Dockerfile %}
 /* Some pointless Javascript */
