@@ -1,15 +1,13 @@
 ## Containers
 
-
 Creando un docker file
 
-{% highlight dockerfile %}
-/* Comments */
+```dockerfile
 FROM ubuntu:15.04
 COPY . /app
 RUN make /app
 CMD python /app/app.py
-{% endhighlight %}
+```
 
 
 {% highlight java %}
