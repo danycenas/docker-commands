@@ -5,11 +5,6 @@ Crear contenedor
 
 {% highlight Javascript %}
 /* Some pointless Javascript */
-docker run -it ubuntu
-{% endhighlight %}
-
-{% highlight Javascript %}
-/* Some pointless Javascript */
 var rawr = ["r", "a", "w", "r"];
 {% endhighlight %}
 
