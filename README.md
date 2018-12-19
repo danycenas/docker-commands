@@ -1,7 +1,7 @@
 ## Containers
 
 **How to create a container?**
-```r
+```java
 docker run -it ubuntu
 /* Created container name by default */
 
