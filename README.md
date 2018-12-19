@@ -8,6 +8,7 @@ int x = Integer.parseInt("10");
 {% highlight javascript %}
 /* Comments */
 var rawr = ["r", "a", "w", "r"];
+int x = Integer.parseInt("10");
 {% endhighlight %}
 
 You can use the [editor on GitHub](https://github.com/danycenas/docker-commands/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
