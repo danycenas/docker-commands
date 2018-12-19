@@ -34,6 +34,12 @@ docker start <CONTAINER-NAME OR CONTAINER-ID>
 docker stop <CONTAINER-NAME OR CONTAINER-ID>
 /* Stop container */
 
+docker port <CONTAINER-NAME OR CONTAINER-ID>
+/* List port mappings or a specific mapping for the container */
+
+docker inspect <CONTAINER-NAME OR CONTAINER-ID>
+/* Container detail  */
+
 docker logs <CONTAINER-NAME OR CONTAINER-ID>
 /* Fetch the logs of a container */
 
