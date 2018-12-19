@@ -1,6 +1,6 @@
 ## Containers
 
-**Crear imagen Ubuntu**
+**Crear**
 ```dockerfile
 docker run -it --name containerUbuntu ubuntu
 
