@@ -3,12 +3,12 @@
 ```markdown
 Crear contenedor
 
-{% highlight r %}
-/* Some pointless r */
+{% highlight Javascript %}
+/* Some pointless Javascript */
 docker run -it ubuntu
 {% endhighlight %}
 
-{% highlight Dockerfile %}
+{% highlight Javascript %}
 /* Some pointless Javascript */
 var rawr = ["r", "a", "w", "r"];
 {% endhighlight %}
