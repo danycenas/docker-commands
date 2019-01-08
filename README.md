@@ -16,8 +16,10 @@ docker pull debian:8
 
 **How to create/delete a container?**
 ```java
-docker container ps -a
-/* List all container (initiated or detained)  */
+docker container ps
+/* List all container initiated */
+-a
+-l
 
 docker run -it ubuntu
 /* Created container name by default */
@@ -27,6 +29,14 @@ docker run -it --name containerUbuntu ubuntu
 
 docker run -it --name containerUbuntu -d ubuntu
 /* Start a container in detached mode */
+-p
+-m "500mb"
+-cpuset-cpus 0-1
+--rm
+
+
+docker cp index.html apache:/tmp
+docker cp apache:/va/httpd
 
 docker rm <CONTAINER-NAME OR CONTAINER-ID>
 /* Delete container */
@@ -51,6 +61,16 @@ docker inspect <CONTAINER-NAME OR CONTAINER-ID>
 
 docker logs <CONTAINER-NAME OR CONTAINER-ID>
 /* Fetch the logs of a container */
+-f
+
+docker stats <CONTAINER-NAME OR CONTAINER-ID>
+/* Display a live stream of container(s) resource usage statistics */
+
+docker commit <CONTAINER-NAME OR CONTAINER-ID> <IMAGE_NAME>
+
+docker info
+/* Directory today */
+
 ```
 
 ### Support or Contact
