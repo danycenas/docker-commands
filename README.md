@@ -53,6 +53,10 @@ docker stop <CONTAINER-NAME OR CONTAINER-ID>
 
 **Another options from container**
 ```java
+docker exec -it containerDebian bash
+docker exec -it containerDebian -c "cat /etc/os-release"
+/* Access a started container */
+
 docker port <CONTAINER-NAME OR CONTAINER-ID>
 /* List port mappings or a specific mapping for the container */
 
@@ -70,8 +74,32 @@ docker commit <CONTAINER-NAME OR CONTAINER-ID> <IMAGE_NAME>
 
 docker info
 /* Directory today */
-
 ```
+
+**Docker Network**
+```java
+docker network ls
+/* List all network */
+
+docker network create <NAME>
+/* Using driver bridge */
+
+docker network inspect <NAME>
+/* Inspect created network */
+
+docker network -d bridge --subnet <IP>/24 --gateway <IP_1> <NAME>
+/* Assign gateway and subnet */
+
+docker run --network <NAME> -it --name containerDebian debian
+/* Connect containers in created network */
+
+docker network connect <NETWORK_NAME> <CONTAINER_NAME>
+/* Connect containers in different networks */
+
+docker network disconnect <NETWORK_NAME> <CONTAINER_NAME>
+/* Disconnect a container from a network */
+```
+
 
 ### Support or Contact
 
