@@ -81,25 +81,37 @@ docker info
 docker network ls
 /* List all network */
 
-docker network create <NAME>
+docker network create <NETWORK_NAME>
 /* Using driver bridge */
 
-docker network inspect <NAME>
+docker network inspect <NETWORK_NAME>
 /* Inspect created network */
 
-docker network -d bridge --subnet <IP>/24 --gateway <IP_1> <NAME>
+docker network -d bridge --subnet <IP-0>/24 --gateway <IP-1> <NETWORK_NAME>
 /* Assign gateway and subnet */
 
-docker run --network <NAME> -it --name containerDebian debian
-/* Connect containers in created network */
+docker run --network <NETWORK_NAME> -it --name containerDebian debian
+docker run --network <NETWORK_NAME> --ip <IP-X> -it --name containerDebian debian
+/* Create container with created network */
 
 docker network connect <NETWORK_NAME> <CONTAINER_NAME>
 /* Connect containers in different networks */
 
 docker network disconnect <NETWORK_NAME> <CONTAINER_NAME>
 /* Disconnect a container from a network */
-```
 
+docker network rm <CONTAINER_NAME>
+/* Delete created network */
+
+docker network rm <CONTAINER_NAME>
+/* Assign IP to a container */
+
+docker run --network host -it --name containerDebian debian
+/* Create container in host network */
+
+docker run --network none -it --name containerDebian debian
+/* Create container in host network */
+```
 
 ### Support or Contact
 
